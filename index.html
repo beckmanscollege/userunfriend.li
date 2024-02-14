@@ -163,6 +163,43 @@
     z-index: 1; /* Anpassa z-index efter behov */
 }
 
+#topButtons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+  z-index: 9999;
+}
+
+#backButton,
+#nextButton {
+  font-family: "pf-pixelscript", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #0000ff, #4682b4);
+  color: #ffffff;
+  border: 2px solid #0000ff;
+}
+
+#backButton {
+  position: fixed;
+  top: 20px; /* Lägg till lite marginal från toppen */
+  left: 20px; /* Lägg till lite marginal från sidan */
+}
+
+#nextButton {
+  position: fixed;
+  top: 20px; /* Lägg till lite marginal från toppen */
+  right: 20px; /* Lägg till lite marginal från sidan */
+}
+
 
 
         .fleeing-button:hover {
@@ -260,6 +297,12 @@
         <div id="ageProfile"></div>
         <div id="imageProfile"></div>
     </div>
+  
+  <div id="topButtons">
+  <button id="backButton">Tillbaka</button>
+  <button id="nextButton">Nästa</button>
+</div>
+
 </div>
 <div class="overlay" id="overlay">
     <img src="https://cdn.glitch.global/626ab5de-6812-4aea-b816-83553b116de8/erroreld.gif?v=1707405633681" alt="Error GIF">

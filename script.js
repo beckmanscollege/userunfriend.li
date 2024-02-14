@@ -221,3 +221,11 @@ document.querySelector('.fleeing-button').addEventListener('click', function() {
         setTimeout(playErrorSound, i * 100); // Spela ljudet med 100ms fördröjning för varje iteration
     }
 });
+
+document.getElementById("backButton").addEventListener("click", function () {
+  window.location.href = "https://un-fortu.net/";
+});
+
+document.getElementById("nextButton").addEventListener("click", function () {
+  window.location.href = "https://wealthgapwatch.com/";
+});
