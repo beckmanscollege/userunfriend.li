@@ -227,5 +227,5 @@ document.getElementById("backButton").addEventListener("click", function () {
 });
 
 document.getElementById("nextButton").addEventListener("click", function () {
-  window.location.href = "https://wealthgapwatch.com/";
+  window.location.href = "https://ai-robot-rom.com/";
 });
